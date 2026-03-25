@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Programación II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Programación II Sección #1</h1>
+    </nav>
+
+    <main>
+        <form id="formularioNota">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            
+            <select id="semestre">
+                <option value="1er Semestre">1er Semestre</option>
+                <option value="2do Semestre">2do Semestre</option>
+                <option value="3er Semestre">3er Semestre</option>
+                <option value="4to Semestre">4to Semestre</option>
+            </select>
+
+            <div class="notas">
+                <input type="number" class="nota" placeholder="Nota 1" min="0" max="20" required>
+                <input type="number" class="nota" placeholder="Nota 2" min="0" max="20" required>
+                <input type="number" class="nota" placeholder="Nota 3" min="0" max="20" required>
+                <input type="number" class="nota" placeholder="Nota 4" min="0" max="20" required>
+                <input type="number" class="nota" placeholder="Nota 5" min="0" max="20" required>
+                <input type="number" class="nota" placeholder="Nota 6" min="0" max="20" required>
+            </div>
+
+            <button type="button" onclick="calcularPromedio()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </main>
+
+    <footer>
+        <p>Exavier - C.I: 31.197.589 | Fecha: 25-03-2026</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
